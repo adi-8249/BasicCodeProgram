@@ -15,6 +15,7 @@ namespace BasicCodeProgram
             Console.WriteLine("6:Reminder and quotient");
             Console.WriteLine("7:Swaping two number");
             Console.WriteLine("8:OddEven number program");
+            Console.WriteLine("9:Vowel and consonant");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -63,6 +64,12 @@ namespace BasicCodeProgram
                     OddEven oddeven = new OddEven();
                     oddeven.OddEvenNumber();
                     break;
+
+                case 9:
+                    VowelAndConsonant vowelandconsonant = new VowelAndConsonant();
+                    vowelandconsonant.VowelConsonant('c');
+                    break;
+
 
 
             }
