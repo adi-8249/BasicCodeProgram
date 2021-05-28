@@ -12,6 +12,7 @@ namespace BasicCodeProgram
             Console.WriteLine("3:poweroftwo program");
             Console.WriteLine("4:Harmonic number");
             Console.WriteLine("5:Primefactor");
+            Console.WriteLine("6:Reminder and quotient");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -40,6 +41,10 @@ namespace BasicCodeProgram
                 case 5:
                     FactorProgram factor = new FactorProgram();
                     factor.PrimeFactor();
+                    break;
+                case 6 :
+                    ReminderQuotient reminderquotient = new ReminderQuotient();
+                    reminderquotient.QuotientReminderValue();
                     break;
 
             }
