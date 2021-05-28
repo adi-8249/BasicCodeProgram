@@ -9,6 +9,7 @@ namespace BasicCodeProgram
         {
             Console.WriteLine("1:flip coin percentage");
             Console.WriteLine("2:Leapyear program");
+            Console.WriteLine("3:poweroftwo program");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -21,6 +22,14 @@ namespace BasicCodeProgram
                 case 2:
                     LeapYearProgram leapyear = new LeapYearProgram();
                     leapyear.LeapYear();
+                    break;
+                case 3:
+                    PowerOfTwo poweroftwo = new PowerOfTwo();
+                    PowerOfTwo powerOfTwo = new PowerOfTwo();
+                    Console.WriteLine("Enter the number to check its 2's power=");
+                    int input = Convert.ToInt32(Console.ReadLine());
+                    int result = powerOfTwo.PowerOfTwoResult(input);
+                    Console.WriteLine("result is=" + result);
                     break;
 
             }
