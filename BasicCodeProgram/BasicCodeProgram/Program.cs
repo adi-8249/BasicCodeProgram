@@ -14,6 +14,7 @@ namespace BasicCodeProgram
             Console.WriteLine("5:Primefactor");
             Console.WriteLine("6:Reminder and quotient");
             Console.WriteLine("7:Swaping two number");
+            Console.WriteLine("8:OddEven number program");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -56,6 +57,11 @@ namespace BasicCodeProgram
                 case 7 :
                     SwapingNumber swapnumber = new SwapingNumber();
                     swapnumber.SwapTwoNumber();
+                    break;
+
+                case 8:
+                    OddEven oddeven = new OddEven();
+                    oddeven.OddEvenNumber();
                     break;
 
 
