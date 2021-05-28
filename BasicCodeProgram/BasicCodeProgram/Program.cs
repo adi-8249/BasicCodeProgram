@@ -13,6 +13,7 @@ namespace BasicCodeProgram
             Console.WriteLine("4:Harmonic number");
             Console.WriteLine("5:Primefactor");
             Console.WriteLine("6:Reminder and quotient");
+            Console.WriteLine("7:Swaping two number");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -22,10 +23,12 @@ namespace BasicCodeProgram
                     FlipCoinProgram flipcoin = new FlipCoinProgram();
                     flipcoin.FlipCoinPercentage();
                     break;
+
                 case 2:
                     LeapYearProgram leapyear = new LeapYearProgram();
                     leapyear.LeapYear();
                     break;
+
                 case 3:
                     PowerOfTwo poweroftwo = new PowerOfTwo();
                     PowerOfTwo powerOfTwo = new PowerOfTwo();
@@ -34,18 +37,27 @@ namespace BasicCodeProgram
                     int result = powerOfTwo.PowerOfTwoResult(input);
                     Console.WriteLine("result is=" + result);
                     break;
+
                 case 4:
                     HarmonicNumber harmonicnumber = new HarmonicNumber();
                     harmonicnumber.HarmonicNumberProgram();
                     break;
+
                 case 5:
                     FactorProgram factor = new FactorProgram();
                     factor.PrimeFactor();
                     break;
+
                 case 6 :
                     ReminderQuotient reminderquotient = new ReminderQuotient();
                     reminderquotient.QuotientReminderValue();
                     break;
+
+                case 7 :
+                    SwapingNumber swapnumber = new SwapingNumber();
+                    swapnumber.SwapTwoNumber();
+                    break;
+
 
             }
            
