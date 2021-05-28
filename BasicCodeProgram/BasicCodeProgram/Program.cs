@@ -16,6 +16,7 @@ namespace BasicCodeProgram
             Console.WriteLine("7:Swaping two number");
             Console.WriteLine("8:OddEven number program");
             Console.WriteLine("9:Vowel and consonant");
+            Console.WriteLine("10:largest number among three number");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -70,7 +71,14 @@ namespace BasicCodeProgram
                     vowelandconsonant.VowelConsonant('c');
                     break;
 
-
+                case 10:
+                    LargestAmongNumbers largestnumber = new LargestAmongNumbers();
+                    Random random = new Random();
+                    int randomnum1 = random.Next(0, 100);
+                    int randomnum2 = random.Next(0, 100);
+                    int randomnum3 = random.Next(0, 100);
+                    largestnumber.LargestNumber(randomnum1, randomnum2, randomnum3);
+                    break;
 
             }
            
