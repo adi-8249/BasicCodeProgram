@@ -10,6 +10,7 @@ namespace BasicCodeProgram
             Console.WriteLine("1:flip coin percentage");
             Console.WriteLine("2:Leapyear program");
             Console.WriteLine("3:poweroftwo program");
+            Console.WriteLine("4:Harmonic number");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -30,6 +31,10 @@ namespace BasicCodeProgram
                     int input = Convert.ToInt32(Console.ReadLine());
                     int result = powerOfTwo.PowerOfTwoResult(input);
                     Console.WriteLine("result is=" + result);
+                    break;
+                case 4:
+                    HarmonicNumber harmonicnumber = new HarmonicNumber();
+                    harmonicnumber.HarmonicNumberProgram();
                     break;
 
             }
